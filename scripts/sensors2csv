@@ -1,0 +1,26 @@
+#!/bin/bash
+
+################################################################################
+# CAUTION: Security Risk
+# This script is intended be executed by cron with root privileges.
+# As such, anything this scripts calls must be trusted and may be modified only
+# by root.
+################################################################################
+
+# epoch time (seconds since jan 1st 1970)
+
+epoch="$(date +%s)"
+
+
+# - run sensors -u | grep input
+# - text processing
+#   - return the second column of each line separated with a coma
+#   - strip the trailing coma
+
+data="$( \
+	/usr/bin/sensors -u | grep input | \
+	/usr/bin/awk '{printf("%s,", $2)}' | \
+	/bin/sed 's/.$//')"
+
+
+echo "$epoch,$data"
