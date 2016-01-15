@@ -1,0 +1,1 @@
+*/15 * * * * if [ -x /usr/sbin/sensors2csv ]; then /usr/sbin/sensors2csv >> /var/log/sensors2csv/sensors2csv.csv.log; fi
