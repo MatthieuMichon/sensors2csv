@@ -1,0 +1,8 @@
+  /var/log/sensors2csv/*.log {
+        weekly
+        missingok
+        rotate 52
+        compress
+        delaycompress
+        notifempty
+}
