@@ -1,6 +1,4 @@
-#! /usr/bin/env sh
-
-echo "### Install"
+#!/usr/bin/env sh
 
 
 # Do not overwrite an already existing /usr/bin/sensors file
@@ -14,6 +12,8 @@ fi
 # Create a "sensors" script stub reproducing a typical output
 
 cat>>/usr/bin/sensors <<EOF
+#!/usr/bin/env sh
+
 cat <<txt
 coretemp-isa-0000
 Adapter: ISA adapter
@@ -90,4 +90,8 @@ VR temp:
 
 txt
 EOF
+
+
+# Set new script file permissions
+
 chmod +x /usr/bin/sensors

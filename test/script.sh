@@ -1,5 +1,7 @@
-#! /usr/bin/env sh
+#!/usr/bin/env sh
 
-echo "### Script"
+
+# Call the target script
+
 scripts/sensors2csv
 

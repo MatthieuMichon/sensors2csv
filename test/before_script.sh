@@ -1,6 +1,4 @@
-#! /usr/bin/env sh
-
-echo "### Before Script"
+#!/usr/bin/env sh
 
 
 # Check that the sensors file is present
