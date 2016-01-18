@@ -1,2 +1,2 @@
 language: bash
-script: /bin/ls -al
+script: /bin/ls -al ./test/
