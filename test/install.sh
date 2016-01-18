@@ -14,6 +14,7 @@ fi
 # Create a "sensors" script stub reproducing a typical output
 
 cat>>/usr/bin/sensors <<EOF
+cat <<txt
 coretemp-isa-0000
 Adapter: ISA adapter
 Core 0:
@@ -87,5 +88,6 @@ VR temp:
   temp3_type: 1.000
   temp3_offset: 0.000
 
+txt
 EOF
 chmod +x /usr/bin/sensors
