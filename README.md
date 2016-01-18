@@ -3,6 +3,9 @@
 # sensors2csv
 Turns raw data from the ``sensors`` command into a CSV file complete with timestamp and log rotation.
 
+# Installation
+The crontab entry expects the script file ``sensors2csv`` to be present in the ``/usr/sbin`` directory along with execute permissions.
+
 # Input Data Format
 This script collects the output of the ``sensors`` program, from the *LM-sensors* package.
 
