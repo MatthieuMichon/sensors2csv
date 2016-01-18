@@ -1,15 +1,16 @@
+[![Build Status](https://travis-ci.org/MatthieuMichon/sensors2csv.svg?branch=master)](https://travis-ci.org/MatthieuMichon/sensors2csv)
+
 # sensors2csv
-Turns raw data from the sensors command into a CSV file complete with timestamp and log rotation
+Turns raw data from the ``sensors`` command into a CSV file complete with timestamp and log rotation.
 
 # Input Data Format
-This script collects the output of the ``sensors`` program.
-
+This script collects the output of the ``sensors`` program, from the *LM-sensors* package.
 
 # Output Data Format
 Output is in plain CSV:
 
 ```
-$ sudo sensors2csv 
+$ sensors2csv 
 1452893077,19.000,17.000,0.872,12.192,3.344,3.344,5.000,1.512,1.072,3.360,3.216,23.000,25.000
 ```
 
