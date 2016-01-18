@@ -1,2 +1,2 @@
 language: bash
-script: ./test/return_zero.sh
+script: /bin/ls -al
