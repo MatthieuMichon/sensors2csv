@@ -2,3 +2,5 @@
 
 echo "### Before Script"
 
+exit 1
+

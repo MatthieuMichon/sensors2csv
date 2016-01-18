@@ -13,7 +13,6 @@ fi
 
 # Create a "sensors" script stub reproducing a typical output
 
-ls -al /usr/bin
 cat>>/usr/bin/sensors <<EOF
 coretemp-isa-0000
 Adapter: ISA adapter
