@@ -3,7 +3,7 @@ sudo: required
 language: bash
 
 before_install: ./test/before_install.sh
-install: ./test/install.sh
+install: sudo ./test/install.sh
 before_script: ./test/before_script.sh
 script: ./test/script.sh
 
