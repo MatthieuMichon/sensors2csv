@@ -1,13 +1,15 @@
 [![Build Status](https://travis-ci.org/MatthieuMichon/sensors2csv.svg?branch=master)](https://travis-ci.org/MatthieuMichon/sensors2csv)
 
 # sensors2csv
-Turns raw data from the ``sensors`` command into a CSV file complete with timestamp and log rotation.
+This repository provides a ``sensors2csv`` script which invokes the ``sensors`` executable and returns a string in CSV format.
+
+# Requirements
+
+* ``sensors`` executable located in the ``/usr/bin`` directory, which is the default configuration in Debian-based distribution after installing the package ``lm-sensors``
 
 # Installation
-The crontab entry expects the script file ``sensors2csv`` to be present in the ``/usr/sbin`` directory along with execute permissions.
-
-# Input Data Format
-This script collects the output of the ``sensors`` program, from the *LM-sensors* package.
+* The ``sensors2csv`` must be copied in the ``/usr/sbin`` directory
+* Crontab and Logrotate must be configured.
 
 # Output Data Format
 Output is in plain CSV:
