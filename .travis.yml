@@ -2,7 +2,9 @@ sudo: required
 
 language: bash
 
-install: sudo ./test/install.sh
+install:
+ - sudo apt-get --assume-yes install lm-sensors
+ - sudo ./test/install.sh
 before_script: ./test/before_script.sh
 script: ./test/script.sh
 
